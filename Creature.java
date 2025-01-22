@@ -1,4 +1,4 @@
-//© A+ Computer Science
+//ï¿½ A+ Computer Science
 // www.apluscompsci.com
 
 //ArrayList of User-defined Classes
@@ -17,28 +17,34 @@ public class Creature
 		size=girth;
 	}
 
+	public int getSize()
+	{
+		return size;
+	}
+
 	/*
 	 * method isBig should return true if size > 75
 	 * method isBig should return false if size <= 75
 	*/
 	public boolean isBig()
 	{
-		return false;
+		return size > 75;
 	}
 
 	public boolean equals(Object obj)
 	{
-
-		return false;
+		Creature other = (Creature)obj;
+		return size == other.getSize();
 	}
 
 	public int compareTo(Object obj)
 	{
-
-		return 0;
+		Creature other = (Creature)obj;
+		return size - other.getSize();
 	}
 
-	public String toString() {
+	public String toString() 
+	{
 		return "" + size;
 	}
 }

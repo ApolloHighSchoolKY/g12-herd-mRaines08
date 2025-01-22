@@ -1,4 +1,4 @@
-//© A+ Computer Science
+//ï¿½ A+ Computer Science
 // www.apluscompsci.com
 
 //ArrayList of User-defined Classes
@@ -11,6 +11,20 @@ public class HerdRunner
 {
 	public static void main ( String[] args )
 	{
+		Creature dog = new Creature(25);
+		Creature horse = new Creature(900);
+
+		System.out.println("The dog's size is " + dog);
+		System.out.println("The horse's size is " + horse);
+
+		System.out.println("\nIs the dog big? " + dog.isBig());
+		System.out.println("Is the horse big? " + horse.isBig());
+
+		System.out.println("\nIs dog equal to horse? " + dog.equals(horse));
+		System.out.println("What is the size difference? " + dog.compareTo(horse));
+
+		System.out.println("");
+
 		Herd bunch = new Herd();
 		bunch.add(73);
 		bunch.add(75);
