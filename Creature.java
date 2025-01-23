@@ -39,8 +39,7 @@ public class Creature
 
 	public int compareTo(Object obj)
 	{
-		Creature other = (Creature)obj;
-		return size - other.getSize();
+		return size - ((Creature)obj).getSize();
 	}
 
 	public String toString() 

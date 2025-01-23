@@ -29,7 +29,11 @@ public class HerdRunner
 		bunch.add(73);
 		bunch.add(75);
 		bunch.add(76);
-		System.out.println(bunch);
-		System.out.println(bunch.countBigOnes());
+		bunch.add(900);
+		bunch.add(10);
+		bunch.add(55);
+		bunch.add(1100);
+		System.out.println("Bunch has creatures sizes" + bunch);
+		System.out.println("There are " + bunch.countBigOnes() + " big creatures.");
   }
 }
